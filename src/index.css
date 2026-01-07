@@ -1,3 +1,24 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .grid,
+  .container,
+  .tg-container,
+  .demo-container {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+}
+
+
+
 /* =====================
    GLOBAL BASE
 ===================== */
@@ -247,7 +268,7 @@ section {
 .hero {
   position: relative;
   width: 100vw;
-  min-height: 88vh;
+  min-height: 100svh;
   background-size: cover;
   background-position: center right;
   margin-left: calc(50% - 50vw);
@@ -774,7 +795,7 @@ section {
   }
 
   .hero {
-    min-height: 70vh;
+    min-height: 100svh;
     background-position: center;
   }
 

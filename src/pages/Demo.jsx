@@ -38,7 +38,7 @@ function Demo() {
 
 <div className="info-block">
   <strong>📞 Phone</strong>
-  <span>+91-7840055519 / 9910660727</span>
+  <span>+91-9667936624 / 7840055519</span>
 </div>
           </div>
 

@@ -521,9 +521,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  filter: grayscale(100%);
-  opacity: 0.55;
+  filter: brightness(100%);
+  opacity: 1  ;
 
   transition: all 0.35s ease;
 }
@@ -536,7 +535,7 @@ section {
 
 /* Hover = trust activation */
 .logo-box:hover {
-  filter: grayscale(0%);
+  filter: none;
   opacity: 1;
   transform: translateY(-6px);
 }

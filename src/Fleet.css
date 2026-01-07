@@ -1,0 +1,201 @@
+/* =========================
+   FLEET PAGE — CLEAN RESET
+========================= */
+
+.fleet-page {
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.fleet-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 0px;
+}
+
+.fleet-hero h1 {
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.fleet-hero p {
+  max-width: 1100px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+ 
+}
+
+/* =========================
+   STATS SECTION (REBUILT)
+========================= */
+
+.fleet-stats {
+  padding: 12px 20px 72px;
+}
+
+.fleet-stats-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* STAT CARD */
+.fleet-stat-card {
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.fleet-stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 32px 90px rgba(37, 99, 235, 0.45);
+}
+
+/* NUMBER */
+.fleet-stat-card h3 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+/* LABEL */
+.fleet-stat-card p {
+  font-size: 16px;
+  opacity: 1;
+  color: #f8fafc;
+}
+
+/* =========================
+   VEHICLE GRID
+========================= */
+
+.fleet-vehicles {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.fleet-vehicles h2 {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.fleet-subtext {
+  color: #555;
+  margin-bottom: 36px;
+  max-width: 620px;
+}
+
+/* GRID */
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+.vehicle-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.12);
+}
+
+.vehicle-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #f8fafc;
+  padding: 12px;
+}
+
+.vehicle-card span {
+  display: block;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+}
+
+/* =========================
+   SUSTAINABILITY SECTION
+========================= */
+
+.fleet-sustainability {
+  padding: 24px 20px 6px;
+}
+
+.sustainability-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.sustainability-text h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sustainability-text p {
+  max-width: 520px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.sustainability-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 20px 48px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .fleet-hero {
+    padding: 56px 20px 40px;
+  }
+
+  .fleet-hero h1 {
+    font-size: 34px;
+  }
+
+  .fleet-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vehicle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sustainability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fleet-stat-card h3 {
+    font-size: 36px;
+  }
+}

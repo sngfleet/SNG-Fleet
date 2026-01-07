@@ -1,0 +1,36 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+import Layout from "./components/Layout"
+
+import Home from "./pages/Home"
+import About from "./pages/About"
+import Services from "./pages/Services"
+import Contact from "./pages/Contact"
+import Demo from "./pages/Demo"
+import AttachCar from "./pages/AttachCar"
+import Fleet from "./pages/Fleet"
+import ScrollToTop from "./components/ScrollToTop"
+
+function App() {
+  return (
+    <BrowserRouter>
+    <ScrollToTop />
+      <Navbar />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/demo" element={<Demo />} />
+          <Route path="/attach-car" element={<AttachCar />} />
+          <Route path="/fleet" element={<Fleet />} />
+        </Routes>
+      </Layout>
+      <Footer />
+    </BrowserRouter>
+  )
+}
+
+export default App

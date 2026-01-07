@@ -7,15 +7,7 @@ html, body {
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .grid,
-  .container,
-  .tg-container,
-  .demo-container {
-    grid-template-columns: 1fr !important;
-    width: 100%;
-  }
-}
+
 
 
 
@@ -419,7 +411,7 @@ section {
 }
 
 .impact-card {
-  background: ffffff;
+  background: #ffffff;
   padding: 36px;
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -994,35 +986,117 @@ section {
 
 
 /* =====================
-   DEMO PAGE — FINAL
+   DEMO / CONTACT — FINAL
+   (Aligned with Attach Car)
 ===================== */
 
 .demo-section {
-  padding: 40px 20px 60px;
-} 
-
-/* MAIN CONTAINER */
-.demo-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: -80px;
-  background: #f8fafc;
-  border-radius: 20px;
-  padding: 48px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  padding: 64px 20px 80px;
+  background: linear-gradient(180deg, #f6f9ff 0%, #ffffff 70%);
+  position: relative;
+  overflow: hidden;
 }
 
 /* =====================
-   BLUE FORM PANEL
+   MAIN CONTAINER
+===================== */
+
+.demo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr; /* info | form */
+  align-items: flex-start;
+  gap: 56px;
+}
+
+/* =====================
+   LEFT CONTENT — INFO
+===================== */
+
+.demo-info-light {
+  order: 1; /* force left */
+  background: linear-gradient(
+    180deg,
+    #f8fafc 0%,
+    #ffffff 100%
+  );
+  padding: 48px 40px;
+  border-radius: 22px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  animation: tgFadeUp 0.7s ease forwards;
+}
+
+/* Eyebrow */
+.demo-info-light::before {
+  content: "CONTACT US";
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+/* Heading */
+.demo-info-light h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+/* Subtext */
+.demo-info-light p {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+/* Info blocks */
+.demo-info-light .info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: #f1f5f9;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.demo-info-light .info-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.demo-info-light .info-block strong {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.demo-info-light .info-block span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* =====================
+   RIGHT CONTENT — FORM
 ===================== */
 
 .demo-form-blue {
-  background: #2563eb;
-  border-radius: 16px;
-  padding: 36px;
+  order: 2; /* force right */
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  padding: 40px;
+  border-radius: 22px;
   color: #ffffff;
+  box-shadow: 0 40px 80px rgba(37, 99, 235, 0.35);
 }
 
 .demo-form-blue h1 {
@@ -1047,11 +1121,6 @@ section {
   grid-template-columns: 1fr 1fr;
   column-gap: 18px;
   row-gap: 14px;
-}
-
-.demo-form-fields input,
-.demo-form-fields textarea {
-  box-sizing: border-box;
 }
 
 .demo-form-fields textarea,
@@ -1100,101 +1169,8 @@ section {
 }
 
 /* =====================
-   CONTACT INFO — REFINED
+   EMBED (IF USED)
 ===================== */
-
-.demo-info-light {
-  background: linear-gradient(
-    180deg,
-    #f8fafc 0%,
-    #ffffff 100%
-  );
-  padding: 48px 40px;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
-  max-width: 420px;
-}
-
-/* Eyebrow text */
-.demo-info-light::before {
-  content: "CONTACT US";
-  display: block;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1.6px;
-  color: #2563eb;
-  margin-bottom: 12px;
-}
-
-/* Heading */
-.demo-info-light h2 {
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #0f172a;
-  margin-bottom: 14px;
-}
-
-/* Subtext */
-.demo-info-light p {
-  font-size: 16px;
-  color: #475569;
-  line-height: 1.7;
-  margin-bottom: 32px;
-}
-
-/* Info blocks */
-.demo-info-light .info-block {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 18px 20px;
-  border-radius: 14px;
-  background: #f1f5f9;
-  margin-bottom: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.demo-info-light .info-block:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-}
-
-/* Label */
-.demo-info-light .info-block strong {
-  font-size: 12px;
-  font-weight: 700;
-  color: #2563eb;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-/* Value */
-.demo-info-light .info-block span {
-  font-size: 16px;
-  font-weight: 600;
-  color: #0f172a;
-}
-
-
-/* =====================
-   RESPONSIVE
-===================== */
-
-@media (max-width: 900px) {
-  .demo-container {
-    grid-template-columns: 1fr;
-    padding: 32px 20px;
-  }
-
-  .demo-form-blue {
-    padding: 28px;
-  }
-
-  .demo-info-light {
-    padding-top: 12px;
-  }
-}
 
 .demo-form-embed {
   margin-top: 24px;
@@ -1207,4 +1183,25 @@ section {
   width: 100%;
   height: 580px;
   border: none;
+}
+
+/* =====================
+   RESPONSIVE — MATCH ATTACH CAR
+===================== */
+
+@media (max-width: 900px) {
+  .demo-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .demo-info-light {
+    order: 1;
+    padding: 40px 24px;
+  }
+
+  .demo-form-blue {
+    order: 2;
+    padding: 32px;
+  }
 }

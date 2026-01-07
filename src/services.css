@@ -230,3 +230,37 @@
   }
 }
 
+
+/* =========================
+   MOBILE FULL-BLEED BACKGROUND
+========================= */
+
+@media (max-width: 600px) {
+
+  /* Move gradient to full page width */
+  .services {
+    background: linear-gradient(
+      180deg,
+      #f6f9ff 0%,
+      #ffffff 60%
+    );
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Remove rounded container effect */
+  .services-grid-section {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Ensure cards sit cleanly */
+  .service-card {
+    border-radius: 20px;
+  }
+}
+

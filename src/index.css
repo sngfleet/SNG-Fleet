@@ -694,6 +694,33 @@ section {
 }
 
 
+/* =========================
+   FIX CARD MERGING ON SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+  /* Increase separation between cards */
+  .service-cards {
+    gap: 20px;
+  }
+
+  /* Make each card clearly independent */
+  .service-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow:
+      0 8px 20px rgba(0,0,0,0.06),
+      0 0 0 1px rgba(0,0,0,0.04);
+  }
+
+  /* Prevent visual blending */
+  .service-card + .service-card {
+    margin-top: 0;
+  }
+}
+
+
 
 /* =====================
    FOOTER — ENTERPRISE

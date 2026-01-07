@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
-
+import logo from "../assets/logo.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -10,7 +10,7 @@ function Navbar() {
       <div className="navbar-inner">
         <div className="navbar-logo">
   <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-    <img src="/src/assets/logo.png" alt="SNG Fleet Logo" />
+    <img src={logo} alt="SNG Fleet Solution Pvt. Ltd." />
   </Link>
 </div>
 

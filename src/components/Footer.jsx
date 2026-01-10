@@ -51,7 +51,7 @@ function Footer() {
       <div className="footer-bottom">
         © 2026 SNG Fleet Solution. All rights reserved.  
         <span>
-          Designed by <a href="https://www.linkedin.com/in/singh-sanmeet/" target="_blank" rel="noreferrer">Sanmeet Singh</a>
+          Designed & Developed by <a href="https://www.linkedin.com/in/singh-sanmeet/" target="_blank" rel="noreferrer">Sanmeet Singh</a>
         </span>
       </div>
     </footer>

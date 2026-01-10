@@ -60,6 +60,7 @@ function Navbar() {
           <li><NavLink to="/services" onClick={()=>setOpen(false)}>Services</NavLink></li>
           <li><NavLink to="/fleet" onClick={()=>setOpen(false)}>Fleet</NavLink></li>
           <li><NavLink to="/demo" onClick={()=>setOpen(false)}>Contact Us</NavLink></li>
+          <li><NavLink to="/attach-car" onClick={()=>setOpen(false)}>Attach your Car</NavLink></li>
         </ul>
 
         <div className="mobile-socials">

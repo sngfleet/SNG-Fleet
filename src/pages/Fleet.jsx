@@ -37,6 +37,9 @@ function Fleet() {
     <main className="fleet-page">
 
       {/* HERO */}
+      <br></br>
+      <br></br>
+
       <section className="fleet-hero">
         <h1>Our Fleet</h1>
         <p>

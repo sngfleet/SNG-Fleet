@@ -43,10 +43,10 @@ body {
 }
 
 .years {
-  height: 55px;        /* increase height */
-  width: auto;         /* preserve aspect ratio */
-  max-width: 180px;    /* allow horizontal stretch safely */
-  object-fit: contain; /* no distortion */
+  height: 55px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
 }
 
 .divider {
@@ -104,9 +104,6 @@ body {
   font-weight: bold;
   border: none;
   cursor: pointer;
-}
-
-.btn {
   position: relative;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -132,12 +129,10 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-
 .btn.black {
   background: #000;
   color: #fff;
   border-radius: 12px;
-  
 }
 
 .btn.yellow {
@@ -177,7 +172,7 @@ body {
   color: #fff;
   font-weight: 600;
   cursor: pointer;
-    border-bottom: 2px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .nav li:hover {
@@ -206,8 +201,45 @@ body {
   display: block;
 }
 
-/* MOBILE */
+/* SOCIAL ICONS */
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.social:hover {
+  color: #2563eb;
+}
+
+/* MOBILE SOCIAL ICONS */
+.mobile-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid #222;
+}
+
+.mobile-socials a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.mobile-socials a:hover {
+  color: #2563eb;
+}
+
+/* =====================
+   MOBILE
+===================== */
 @media (max-width: 768px) {
+
   body {
     padding-top: 170px;
   }
@@ -231,12 +263,7 @@ body {
   }
 
   .topbar-right {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
+    display: none;
   }
 
   .hamburger {
@@ -246,6 +273,10 @@ body {
   .nav {
     display: none;
   }
+
+  .social {
+    display: none;
+  }
 }
 
 /* DESKTOP ONLY */
@@ -253,47 +284,4 @@ body {
   .mobile-nav {
     display: none !important;
   }
-}
-
-
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 28px;
-  height: 28px;
-
-  color: #000;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.social:hover {
-  color: #2563eb;
-}
-
-
-@media (max-width: 768px) {
-  .social {
-    display: none;
-  }
-}
-
-/* MOBILE SOCIAL ICONS */
-.mobile-socials {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 16px 0;
-  border-top: 1px solid #222;
-}
-
-.mobile-socials a {
-  color: #fff;
-  font-size: 18px;
-}
-
-.mobile-socials a:hover {
-  color: #2563eb;
 }

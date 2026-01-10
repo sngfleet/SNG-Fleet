@@ -25,6 +25,7 @@ function Navbar() {
           <a href="https://www.instagram.com/sng.fleetsolutions?igsh=MThoeHp1M2N4ZXU1NQ==" target="_blank" className="social"><FaInstagram /></a>
           {/* <a href="https://linkedin.com" target="_blank" className="social"><FaLinkedinIn /></a> */}
           <span className="email">sngfleetsolution@gmail.com</span>
+          
         </div>
 
         {/* CONTACT */}

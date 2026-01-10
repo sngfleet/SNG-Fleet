@@ -3,26 +3,32 @@
 
   <url>
     <loc>https://sngfleetsolution.in/</loc>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://sngfleetsolution.in/about</loc>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://sngfleetsolution.in/services</loc>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://sngfleetsolution.in/fleet</loc>
-  </url>
-
-  <url>
-    <loc>https://sngfleetsolution.in/attach-car</loc>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://sngfleetsolution.in/demo</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://sngfleetsolution.in/attach-car</loc>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

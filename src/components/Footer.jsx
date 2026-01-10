@@ -20,13 +20,13 @@ function Footer() {
           <Link to="/about">About Us</Link>
           <Link to="/services">Services</Link>
           <Link to="/fleet">Fleet</Link>
-          <Link to="/attach-car">Attach Car</Link>
+          
         </div>
 
         <div className="footer-section">
           <h4>Support</h4>
           <Link to="/demo">Request Demo</Link>
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/attach-car">Attach Car</Link>
         </div>
 
         {/* SOCIAL */}

@@ -81,6 +81,7 @@ body {
 .contact-box {
   font-size: 14px;
   line-height: 1.2;
+  text-align: left;
 }
 
 .contact-box span {
@@ -90,6 +91,7 @@ body {
 
 .contact-box strong {
   color: #000;
+  white-space: nowrap;
 }
 
 /* BUTTONS */
@@ -246,20 +248,42 @@ body {
 
   .topbar {
     flex-wrap: wrap;
+    gap: 8px;
   }
 
-  .topbar-center,
-  .topbar-contact {
+  .topbar-left {
     width: 100%;
     justify-content: center;
   }
 
-  .email {
-    display: none;
+  .topbar-contact {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 
-  .topbar-contact {
-    gap: 16px;
+  .contact-box span {
+    font-size: 12px;
+  }
+
+  .contact-box strong {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .topbar-center {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .email {
+    display: inline;
+    font-size: 13px;
+  }
+
+  .social {
+    display: flex;
   }
 
   .topbar-right {
@@ -271,10 +295,6 @@ body {
   }
 
   .nav {
-    display: none;
-  }
-
-  .social {
     display: none;
   }
 }

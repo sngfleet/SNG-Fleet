@@ -1,7 +1,14 @@
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa"
 import { useState } from "react"
+import useSEO from "../hooks/useSEO";
 
 function Demo() {
+
+  useSEO(
+  "Contact SNG Fleet Solution | Corporate Transport India",
+  "Contact SNG Fleet Solution for corporate employee transportation and fleet management services across India."
+);
+
   const [success, setSuccess] = useState(false)
   const [loading, setLoading] = useState(false)
 

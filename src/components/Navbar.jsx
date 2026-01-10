@@ -38,7 +38,7 @@ function Navbar() {
 
         {/* BUTTONS */}
         <div className="topbar-right">
-  <NavLink to="/demo" className="btn black">
+  <NavLink to="/contact" className="btn black">
     REQUEST A DEMO
   </NavLink>
 
@@ -60,7 +60,7 @@ function Navbar() {
           <li><NavLink to="/about" onClick={()=>setOpen(false)}>About Us</NavLink></li>
           <li><NavLink to="/services" onClick={()=>setOpen(false)}>Services</NavLink></li>
           <li><NavLink to="/fleet" onClick={()=>setOpen(false)}>Fleet</NavLink></li>
-          <li><NavLink to="/demo" onClick={()=>setOpen(false)}>Contact Us</NavLink></li>
+          <li><NavLink to="/contact" onClick={()=>setOpen(false)}>Contact Us</NavLink></li>
           <li><NavLink to="/attach-car" onClick={()=>setOpen(false)}>Attach your Car</NavLink></li>
         </ul>
 
@@ -78,7 +78,7 @@ function Navbar() {
           <li><NavLink to="/about">About Us</NavLink></li>
           <li><NavLink to="/services">Services</NavLink></li>
           <li><NavLink to="/fleet">Fleet</NavLink></li>
-          <li><NavLink to="/demo">Contact Us</NavLink></li>
+          <li><NavLink to="/contact">Contact Us</NavLink></li>
         </ul>
       </nav>
 

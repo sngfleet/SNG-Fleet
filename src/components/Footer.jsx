@@ -25,7 +25,7 @@ function Footer() {
 
         <div className="footer-section">
           <h4>Support</h4>
-          <Link to="/demo">Contact Us</Link>
+          <Link to="/contact">Contact Us</Link>
           <Link to="/attach-car">Attach Car</Link>
         </div>
 

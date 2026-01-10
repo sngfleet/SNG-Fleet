@@ -1,7 +1,14 @@
 import { useEffect, useState } from "react"
 import "../Fleet.css"
+import useSEO from "../hooks/useSEO";
 
 function Fleet() {
+
+  useSEO(
+  "Fleet Vehicles | SNG Fleet Solution",
+  "Explore SNG Fleet Solution’s professional corporate vehicle fleet."
+);
+
   const [ownedVehicles, setOwnedVehicles] = useState(0)
   const [associatedVehicles, setAssociatedVehicles] = useState(0)
 

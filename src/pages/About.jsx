@@ -3,8 +3,15 @@ import ops from "../assets/operations.jpg";
 import leader1 from "../assets/leader1.jpg";
 import leader2 from "../assets/leader2.jpg";
 import "../about.css";
+import useSEO from "../hooks/useSEO";
 
 function About() {
+
+  useSEO(
+  "About SNG Fleet Solution | Corporate Transport Experts",
+  "Learn about SNG Fleet Solution, India’s trusted corporate transport partner."
+);
+
   return (
     <>
       {/* FULL BLEED HERO */}

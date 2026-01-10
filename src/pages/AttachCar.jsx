@@ -1,6 +1,13 @@
 import { useState } from "react"
+import useSEO from "../hooks/useSEO";
 
 function AttachCar() {
+
+  useSEO(
+  "Attach Your Car to SNG Fleet | Partner With Us",
+  "Attach your vehicle to SNG Fleet Solution and get corporate transport contracts."
+);
+
   const [success, setSuccess] = useState(false)
   const [loading, setLoading] = useState(false)
 

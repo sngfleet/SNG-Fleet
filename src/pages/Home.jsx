@@ -15,10 +15,16 @@ import {
   FaUsers
 } from "react-icons/fa"
 import homeImage from "../assets/home_1.png";
-
+import useSEO from "../hooks/useSEO";
 
 
 function Home() {
+
+    useSEO(
+    "SNG Fleet Solution | Corporate Transportation Services in India",
+    "Corporate employee transportation and fleet management solutions across India by SNG Fleet Solution."
+  );
+  
   const sectionRef = useRef(null)
   const hasAnimated = useRef(false)
 
@@ -78,7 +84,7 @@ function Home() {
               </p>
 
               <div className="hero-cta">
-  <Link to="/demo">
+  <Link to="/contact">
     <button className="hero-primary">Request a Demo</button>
   </Link>
   <Link to="/attach-car">

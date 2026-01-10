@@ -4,10 +4,18 @@ import empImg from "../assets/service-employee.jpg";
 import rentalImg from "../assets/service-rental.jpg";
 import vipImg from "../assets/service-vip.jpg";
 import opsImg from "../assets/service-operations.jpg";
+import useSEO from "../hooks/useSEO";
 
 import "../services.css";
 
 function Services() {
+
+  useSEO(
+  "Corporate Transport Services | SNG Fleet Solution",
+  "Enterprise employee transportation and fleet management services in India."
+);
+
+
   return (
     <>
       

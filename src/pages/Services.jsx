@@ -42,7 +42,7 @@ function Services() {
             <div className="service-card">
               <img src={empImg} alt="Employee Transport" />
               <div className="service-body">
-                <span className="service-icon">🚌</span>
+                <span className="service-icon"></span>
                 <h3>Employee Transportation</h3>
                 <p>
                   Shift-aligned employee commute management with strict safety
@@ -60,7 +60,7 @@ function Services() {
             <div className="service-card">
               <img src={rentalImg} alt="Corporate Rentals" />
               <div className="service-body">
-                <span className="service-icon">🚗</span>
+                <span className="service-icon"></span>
                 <h3>Corporate & Spot Rentals</h3>
                 <p>
                   Flexible vehicle rentals designed for business travel and
@@ -77,7 +77,7 @@ function Services() {
             <div className="service-card">
               <img src={vipImg} alt="VIP Transport" />
               <div className="service-body">
-                <span className="service-icon">⭐</span>
+                <span className="service-icon"></span>
                 <h3>VIP & Executive Transport</h3>
                 <p>
                   Premium mobility solutions for leadership, guests, and
@@ -94,7 +94,7 @@ function Services() {
             <div className="service-card">
               <img src={opsImg} alt="Operations Control" />
               <div className="service-body">
-                <span className="service-icon">🧭</span>
+                <span className="service-icon"></span>
                 <h3>Operations & Control</h3>
                 <p>
                   Centralized command backed by technology-driven monitoring

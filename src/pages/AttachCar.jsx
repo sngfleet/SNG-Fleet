@@ -1,36 +1,91 @@
+import { useState } from "react"
+
 function AttachCar() {
+  const [success, setSuccess] = useState(false)
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    const form = e.target
+    const data = new FormData(form)
+
+    try {
+      await fetch("https://formsubmit.co/ajax/fleetsng@gmail.com", {
+        method: "POST",
+        body: data
+      })
+
+      form.reset()
+      setSuccess(true)
+    } catch {
+      alert("Submission failed. Try again.")
+    }
+
+    setLoading(false)
+  }
+
   return (
-    <section className="tg-contact">
-      <div className="tg-container">
+    <section className="attach-section">
+      <div className="attach-container">
 
-        {/* LEFT CONTENT */}
-        <div className="tg-left">
-          <span className="tg-eyebrow">PARTNER WITH US</span>
-
-          <h1>Attach your vehicle with SNG Fleet</h1>
-
+        <div className="attach-left">
+          <span className="attach-eyebrow">PARTNER WITH SNG</span>
+          <h1>Attach Your Vehicle to Our Corporate Network</h1>
           <p>
-            Partner with India’s growing corporate mobility network.
-            Get consistent enterprise trips, transparent operations,
-            and professional fleet management backed by centralized support.
+            Join India’s trusted enterprise mobility ecosystem.
+            Receive consistent trips, transparent settlements, and
+            long-term corporate contracts backed by professional fleet operations.
           </p>
         </div>
 
-        {/* RIGHT — GOOGLE FORM */}
-        <div className="tg-form">
-          {/* <h3>Send vehicle details</h3> */}
+        <div className="attach-form-card">
+          <h3>Vehicle Partner Registration</h3>
 
-          <div className="tg-form-embed">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSf0AawcSi0iWZXYi0Sb3h1uOsZXRAVglJfmhoEa9Ebd9hIf8Q/viewform?embedded=true"
-              title="Attach Car Form"
-              frameBorder="0"
-              marginHeight="0"
-              marginWidth="0"
-            >
-              Loading…
-            </iframe>
-          </div>
+          {success ? (
+            <div className="attach-success">
+              ✅ Thank you! Your request has been submitted successfully.  
+              Our team will contact you shortly.
+            </div>
+          ) : (
+            <form className="attach-form" onSubmit={handleSubmit}>
+
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_subject" value="New Vehicle Attach Request" />
+              <input type="text" name="website" style={{ display: "none" }} />
+
+              <div className="attach-row">
+                <input name="Owner Name" placeholder="Owner Name" required />
+                <input name="Mobile Number" placeholder="Mobile Number" required />
+              </div>
+
+              <div className="attach-row">
+                <input name="Email" type="email" placeholder="Email Address" required />
+                <input name="City" placeholder="City of Operation" required />
+              </div>
+
+              <div className="attach-row">
+                <input name="Vehicle Model" placeholder="Vehicle Model" required />
+                <input name="Vehicle Number" placeholder="Vehicle Number" required />
+              </div>
+
+              <textarea
+                name="Additional Info"
+                placeholder="Additional Information (optional)"
+              ></textarea>
+
+              <button
+                type="submit"
+                className="attach-submit"
+                disabled={loading}
+              >
+                {loading ? "Submitting..." : "Submit Vehicle Request"}
+              </button>
+
+            </form>
+          )}
         </div>
 
       </div>

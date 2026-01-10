@@ -130,7 +130,7 @@ function Home() {
             <h1>Our Milestones</h1>
             <div
   
-/>
+/><br></br>
             <p>
               Scale that enterprise clients trust. Operations built for
               reliability, safety, and daily performance across India.
@@ -165,11 +165,15 @@ function Home() {
 
         </section>
       </div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
       {/* CLIENT LOGOS — FIXED */}
       <div className="section-band">
         <section style={{ padding: "40px 20px" }}>
-          <h2>Trusted by Leading Organizations</h2>
+          <h1>Trusted by Leading Organizations</h1>
           <p style={{ marginTop: "12px" }}>
             We work with enterprises across industries to deliver reliable
             employee transportation solutions.
@@ -188,12 +192,17 @@ function Home() {
         </section>
       </div>
 
+      <br></br>
+<br></br>
+<br></br>
+<br></br>
+
       {/* WHAT WE DO — REDESIGNED */}
 <section className="services-section">
   <div className="services-container">
 
     <div className="services-header">
-      <h2>What We Do</h2>
+      <h1>What We Do</h1>
       <p>
         Enterprise-grade mobility solutions designed around reliability,
         safety, and operational excellence.

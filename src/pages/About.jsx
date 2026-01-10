@@ -62,7 +62,7 @@ function About() {
             </div>
 
             <div className="story-content">
-              <h2>Who We Are</h2>
+              <h1>Who We Are</h1>
 
               <p>
                 Founded in 2017, SNG Fleet Solution Pvt. Ltd. is a Delhi-NCR
@@ -99,7 +99,7 @@ function About() {
         <section className="leadership-section">
   <div className="leadership-header">
     <span className="eyebrow">LEADERSHIP</span>
-    <h2>Driven by Experience</h2>
+    <h1>Driven by Experience</h1>
     <p>
       Leadership with deep expertise in enterprise mobility, compliance,
       and large-scale transportation operations.
@@ -111,7 +111,7 @@ function About() {
       <div className="leader-image">
         <img src={leader1} alt="Dharmender Chauhan" />
       </div>
-      <h4>Dharmender Chauhan</h4>
+      <h2>Dharmender Chauhan</h2>
       <span>Founder & Managing Director</span>
     </div>
 
@@ -119,7 +119,7 @@ function About() {
       <div className="leader-image">
         <img src={leader2} alt="Atin Sharma" />
       </div>
-      <h4>Atin Sharma</h4>
+      <h2>Atin Sharma</h2>
       <span>Director</span>
     </div>
   </div>
@@ -130,7 +130,7 @@ function About() {
 <section className="core-values">
   <div className="core-values-inner">
     <span className="eyebrow">What Drives Us</span>
-    <h2>Our Core Values</h2>
+    <h1>Our Core Values</h1>
     <p className="subtitle">
       Principles that guide every decision, every route, and every partnership.
     </p>

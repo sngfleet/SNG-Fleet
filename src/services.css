@@ -115,19 +115,20 @@
 }
 
 .service-body h3 {
-  font-size: 21px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
 .service-body p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
   color: #475569;
 }
 
 .service-body li {
-  font-size: 14px;
+  margin-top: 8px;
+  font-size: 16px;
   color: #475569;
 }
 

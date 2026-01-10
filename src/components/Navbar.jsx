@@ -31,7 +31,7 @@ function Navbar() {
         <div className="topbar-contact">
           <div className="contact-box">
             <span>CAB ATTACHMENTS / CORPORATE ENQUIRY</span>
-            <strong>+91-9667936624 / 7840055519</strong>
+            <strong>+91-9667936624 | 7840055519</strong>
           </div>
         </div>
 

@@ -305,3 +305,20 @@ body {
     display: none !important;
   }
 }
+
+/* EXTRA SMALL PHONES (iPhone width) */
+@media (max-width: 420px) {
+
+  .contact-box strong {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .contact-box span {
+    font-size: 11px;
+  }
+
+  .topbar-contact {
+    flex-wrap: nowrap;
+  }
+}

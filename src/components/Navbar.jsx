@@ -16,7 +16,7 @@ function Navbar() {
         <NavLink to="/" onClick={() => window.scrollTo(0, 0)} className="topbar-left">
   <img src="/logo.png" alt="Logo" className="logo" />
   <div className="divider"></div>
-  <img src="/logo2.png" alt="25 Years" className="years" />
+  <img src="/logo2.png" alt="Logo 2" className="years" />
 </NavLink>
 
         {/* CENTER */}
